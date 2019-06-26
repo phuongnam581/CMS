@@ -1,0 +1,220 @@
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+
+  /* sans-serif bỏ dấu gạch chân ở chữ cái */
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+.header {
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: solid rgb(199, 194, 195) 1px;
+}
+.header h4 {
+  margin-left: 20px;
+  color: gray;
+}
+.header__user-detail {
+  position: absolute;
+  top: 41px;
+  right: -1px;
+  border: solid rgb(240, 240, 240) 2px;
+  width: 150px;
+  height: 80px;
+  box-shadow: -3px 5px 10px rgb(219, 217, 217);
+  display: none;
+  /* text-align: center; */
+}
+.header__user-detail a {
+  text-decoration: none;
+  color: gray;
+}
+.header__user {
+  height: 40px;
+  margin-right: 20px;
+  width: 50px;
+  position: relative;
+  /* background: rgb(224, 221, 221); */
+}
+.header__user:hover {
+  background: rgb(224, 221, 221);
+}
+.header__user:hover .header__user-detail {
+  display: block;
+}
+.header__user-icon {
+  /* margin: 10px 30px; */
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: rgb(15, 15, 189);
+}
+.user-profile,
+.logout {
+  height: 50%;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+hr {
+  margin: 0;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.content__left {
+  width: 15%;
+  height: 600px;
+  background-color: rgb(240, 240, 240);
+  border-right: 1px solid rgb(195, 195, 195);
+}
+.view,
+.note {
+  border-bottom: 1px solid rgb(195, 195, 195);
+  padding: 10px 15px;
+  color: rgb(15, 15, 189);
+  cursor: pointer;
+}
+.content__left a {
+  text-decoration: none;
+}
+.content__right {
+  width: 75%;
+  margin-right: 100px;
+  margin-top: 25px;
+}
+.content__right .add hr {
+  width: 1020px;
+}
+.detail .title {
+  padding: 10px;
+  background: rgb(240, 240, 240);
+  border-bottom: 1px solid rgb(195, 195, 195);
+  width: 100%;
+}
+.title p {
+  margin: 0;
+  font-weight: 400;
+}
+form {
+  width: 100%;
+  /* border-radius: 4px; */
+  /* border: 1px solid rgb(195, 195, 195); */
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: -5px;
+}
+form p {
+  margin: 0;
+  padding-top: 10px;
+}
+.detail {
+  margin-top: 10px;
+  border-radius: 2px;
+  border: 1px solid rgb(195, 195, 195);
+}
+form .input {
+  width: 60%;
+  border-radius: 3px;
+  border: 1px solid rgb(195, 195, 195);
+  padding: 5px;
+  outline: none;
+}
+form p {
+  font-weight: 700;
+}
+.input.email {
+  border: none;
+  padding: 0;
+}
+form textarea {
+  height: 100px;
+  width: 60%;
+  border-radius: 3px;
+  outline: none;
+}
+.button-form input {
+  width: 125px;
+  height: 30px;
+  background: #5cb85c;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.brief {
+  height: 60px;
+  width: 60%;
+  border-radius: 3px;
+  outline: none;
+}
+.add {
+  display: block;
+}
+#loading{
+	display: none;
+}
+.edit {
+  display: block;
+}
+.view__content {
+  margin-top: 30px;
+}
+td input {
+  width: 70px;
+  margin-left: 2px;
+}
+.button-submit {
+  text-align: center;
+  width: 170px;
+}
+.edit-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;  
+  width: 50%;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {  
+  text-decoration: none;
+  cursor: pointer;
+}
